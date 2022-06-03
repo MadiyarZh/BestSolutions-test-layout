@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-style: normal; 
+}
+
+
+/* Header */
+
+header {
+    position: relative;
+    background: url(../img/header-background.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.header-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+header .header-left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0px 40px 86px 0px;
+    z-index: 10;
+}
+
+header .header-left-side .header-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+    z-index: 10;
+}
+
+header .header-left-side .header-subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    z-index: 10;
+    color: #FFFFFF;
+}
+
+header .header-right-side {
+    background-color: #3A1BB5;
+    color: #FFFFFF;
+    padding: 46px 18px 86px;
+    z-index: 10;
+}
+
+header .header-right-side .language-btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    z-index: 10;
+}
+
+header .header-right-side .language-btns .lang-btn {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 48px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+header .header-right-side .language-btns .lang-btn.active {
+    color: #FEB119;
+    padding: 0px 10px;
+    border: 2px solid #FEB119;
+    border-radius: 6px;
+}
+
+header .header-right-side .language-btns .lang-btn:hover {
+    color: #FEB119;
+}
+
+.call-btns {
+    text-align: center;
+    margin-top: 94px;
+    z-index: 10;
+}
+
+.call-btns .free-call-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 5px solid #FEB119;
+    border-radius: 20px;
+    padding: 14px 25px 11px 35px;
+    text-decoration: none;
+    color: #FEB119;
+    width: max-content;
+    margin: auto;
+}
+
+.call-btns .free-call-btn:hover {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.call-btns .free-call-btn i {
+    font-size: 59px;
+}
+
+.call-btns .free-call-btn span {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 94px;
+}
+
+.call-btns .text-free-call-btn {
+    width: 100%;
+    display: block;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.whatsapp-btn {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-top: 20px;
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp-btn i {
+    color: #FEB119;
+}
+
+.whatsapp-btn span {
+    text-decoration: none;
+}
+
+.whatsapp-btn:hover {
+    color: #FEB119;
+    text-decoration: none;
+}
+
+/* Body */
+
+.main-block {
+    padding: 60px 0px;
+}
+
+.cards-wrapper {
+    row-gap: 40px;
+}
+
+.cards-wrapper .card-item {
+    background: #F8F8F8;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    padding: 22px 30px 30px;
+    max-width: 360px;
+    text-align: center;
+    margin-right: 40px;
+    width: calc(50% - 40px);
+}
+
+.mobile-card-img {
+    display: none;
+}
+
+.cards-wrapper .card-item  hr {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.card-item .skidka {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #000000;
+}
+
+.card-item-info {
+    width: 100%;
+}
+
+.card-item-info tr td {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    padding: 10px 0px;
+}
+
+.card-item-info tbody tr td:first-child {
+    text-align: start;
+}
+
+.card-item-info tbody tr td:last-child {
+    text-align: end;
+}
+
+.order-btn {
+    background: #66D144;
+    border-radius: 6px;
+    padding: 18px 0px 20px;
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-top: 38px;
+}
+
+.order-btn:hover {
+    background: #53B135;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.right-sidebar {
+    background: rgba(255, 138, 1, 0.05);
+    margin: 60px 0px;
+    padding: 30px;
+}
+
+.right-sidebar .sidebar-list {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    counter-reset: item;
+}
+
+.right-sidebar .sidebar-list li {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    color: #000000;
+    padding: 0px 0px 0px 30px;
+    position: relative;
+
+}
+
+.right-sidebar .sidebar-list li::before {
+    position: absolute;
+    content: counter(item) ". ";
+    counter-increment: item;
+    left: 0;
+  }
+
+.right-sidebar .sidebar-list hr {
+    border: 1px solid #FF8A01;
+    margin: 28px 0px;
+}
+
+/* Footer */
+
+footer .footer-wrapper {
+    width: 100%;
+}
+
+footer .copyright {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    margin: 20px 0px;
+    color: #000000;
+}
+
+footer .copyright br {
+    display: none;
+}
+
+footer .since {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* Adaptive */
+
+/* MD 1040px< */
+
+@media (max-width: 1040px) {
+
+    header {
+        background-position: left;
+    }
+
+    .call-btns .free-call-btn {
+        gap: 5px;
+        border-radius: 20px;
+        padding: 5px 5px 6px 10px;
+    }
+    
+    .call-btns .free-call-btn span {
+        font-size: 70px;
+    }
+
+    .call-btns .free-call-btn i {
+        font-size: 49px;
+    }
+
+    .call-btns .text-free-call-btn {
+        font-size: 24px;
+    }
+
+    .whatsapp-btn {
+        font-size: 28px;
+    }
+}
+
+
+/* MD 992px< */
+
+@media (max-width: 992px) {
+
+    /* Header */
+
+    header {
+        background: url(../img/header-background-mobile.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 1110px;
+    }
+
+    header .container {
+        height: 100%;
+        display: flex;
+        align-items: end;
+        padding-bottom: 60px;
+        width: 100%;
+        margin: 0;
+        padding: 0px 0px 52px;
+        max-width: 100%;
+    }
+
+    header .container .row {
+        margin: 0;
+    }
+
+    header .header-left-side {
+        padding: 0px 40px 40px;
+    }
+
+    header .header-right-side {
+        position: initial;
+    }
+
+    header .header-right-side .language-btns {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        justify-content: end;
+        width: max-content;
+        background: #3a1bb5;
+        padding: 13px 16px;
+    }
+
+    .call-btns {
+        margin-top: 30px;
+    }
+
+    /* Body */
+
+    .body-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .cards-wrapper .card-item {
+        width: calc(50% - 20px);
+    }
+
+    .cards-wrapper .card-item:nth-child(odd) {
+        margin-right: 40px;
+    }
+    .cards-wrapper .card-item:nth-child(even) {
+        margin-right: 0px;
+    }
+}
+
+
+/* SM */
+
+@media (max-width: 768px) {
+    
+    /* Header */
+
+    header {
+        height: 795px;
+    }
+
+    header .header-right-side .language-btns .lang-btn {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    header .header-left-side {
+        padding: 0px 40px 20px;
+    }
+
+    header .header-left-side .header-title {
+        font-size: 24px;
+        line-height: 36px;
+        padding-right: 45px;
+    }
+
+    header .header-left-side .header-subtitle {
+        font-size: 20px;
+    }
+
+    header .header-right-side {
+        padding: 30px 40px;
+    }
+
+    .call-btns {
+        margin-top: 0px;
+        text-align: start;
+    }
+
+    .call-btns .free-call-btn {
+        padding: 15px 25px 15px 35px;
+        margin: 0;
+    }
+
+    .call-btns .free-call-btn span {
+        font-size: 64px;
+        line-height: 75px;
+    }
+
+    .call-btns .text-free-call-btn {
+        font-size: 22px;
+        line-height: 32px;          
+    }
+
+    .whatsapp-btn {
+        justify-content: start;
+    }
+
+    .whatsapp-btn span {
+        font-size: 28px;
+        line-height: 33px;
+    }
+
+    /* Body */
+
+    .body-wrapper {
+        padding: 40px 20px;
+    }
+
+    .right-sidebar {
+        margin: 0;
+        padding: 30px 20px;
+    }
+
+    .right-sidebar .sidebar-list li {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .right-sidebar .sidebar-list hr {
+        margin: 20px 0px;
+    }
+
+    .main-block {
+        padding: 40px 0px 0px;
+    }
+
+    .cards-wrapper .card-item:nth-child(odd) {
+        margin-right: 20px;
+    }
+
+    .cards-wrapper .card-item:nth-child(even) {
+        margin-right: 0px;
+    }
+
+    .cards-wrapper .card-item {
+        width: calc(50% - 10px);
+        padding: 14px 10px 15px;
+    }
+
+    .cards-wrapper .card-item img {
+        margin: auto;
+    }
+
+    .card-item .skidka {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .cards-wrapper .card-item hr {
+        margin: 10px 0px;
+    }
+
+    .card-item-info tr td {
+        font-size: 9px;
+        line-height: 11px;
+        padding: 4px 0px;
+    }
+
+    .order-btn {
+        margin-top: 11px;
+        font-size: 9px;
+        line-height: 11px;
+        padding: 9px 0px 10px;
+    }
+
+    .desktop-card-img {
+        display: none;
+    }
+
+    .mobile-card-img {
+        display: block;
+    }
+
+    /* Footer */
+    
+    footer .copyright {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    footer .copyright br {
+        display: block;
+    }
+
+    footer .since {  
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
